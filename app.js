@@ -1,6 +1,3 @@
-const randomNumber = require('../lib/random.js');
+const Game = require('./lib/Game');
 
-test('gets random number between 1 and 10', () => {
-  expect(randomNumber()).toBeGreaterThanOrEqual(1);
-  expect(randomNumber()).toBeLessThanOrEqual(10);
-});
+new Game().initializeGame();
